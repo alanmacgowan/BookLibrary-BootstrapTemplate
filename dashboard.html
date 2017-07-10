@@ -16,7 +16,7 @@
     <link type="text/css" rel="stylesheet" href="styles/all.css">
     <link type="text/css" rel="stylesheet" href="styles/main.css">
     <link type="text/css" rel="stylesheet" href="styles/style-responsive.css">
-     <link type="text/css" rel="stylesheet" href="styles/jplist-custom.css">
+    <link type="text/css" rel="stylesheet" href="styles/jplist-custom.css">
 </head>
 
 <body>
@@ -41,10 +41,10 @@
 
                         <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="images/avatar/48.jpg" alt="" class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">John Doe</span>&nbsp;<span class="caret"></span></a>
                             <ul class="dropdown-menu dropdown-user pull-right">
-                                <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+                                <li><a href="profile.html"><i class="fa fa-user"></i>My Profile</a></li>
                                 <li><a href="#"><i class="fa fa-tasks"></i>My Books</a></li>
                                 <li class="divider"></li>
-                                <li><a href="Login.html"><i class="fa fa-key"></i>Log Out</a></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out"></i>Log Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -65,7 +65,7 @@
                         <div class="icon-bg bg-orange"></div>
                     </i><span class="menu-title">Dashboard</span></a></li>
 
-                        <li><a href="books.html"><i class="fa fa-file-o fa-fw">
+                        <li><a href="books.html"><i class="fa fa-book fa-fw">
                         <div class="icon-bg bg-yellow"></div>
                     </i><span class="menu-title">Books</span></a>
                         </li>
@@ -102,18 +102,34 @@
                 <!--END TITLE & BREADCRUMB PAGE-->
                 <!--BEGIN CONTENT-->
                 <div class="page-content">
+
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h4>Dashboard BookLibrary</h4>
+
+                            <p>This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application. This is a sample application. 
+                                This is a sample application. This is a sample application.</p>
+                        </div>
+                    </div>
+
                     <div id="sum_box" class="row mbl">
                         <div class="col-sm-6 col-md-3">
                             <div class="panel profit db mbm">
                                 <div class="panel-body">
                                     <p class="icon">
-                                        <i class="icon fa fa-shopping-cart"></i>
+                                        <i class="icon fa fa-book"></i>
                                     </p>
                                     <h4 class="value">
                                         <span data-counter="" data-start="10" data-end="50" data-step="1" data-duration="0">
-                                            </span><span>$</span></h4>
+                                            </span><span>11</span></h4>
                                     <p class="description">
-                                        Profit description</p>
+                                        Books</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" class="progress-bar progress-bar-success">
                                             <span class="sr-only">80% Complete (success)</span></div>
@@ -125,12 +141,12 @@
                             <div class="panel income db mbm">
                                 <div class="panel-body">
                                     <p class="icon">
-                                        <i class="icon fa fa-money"></i>
+                                        <i class="icon fa fa-user"></i>
                                     </p>
                                     <h4 class="value">
-                                        <span>215</span><span>$</span></h4>
+                                        <span>12</span></h4>
                                     <p class="description">
-                                        Income detail</p>
+                                        Authors</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar progress-bar-info">
                                             <span class="sr-only">60% Complete (success)</span></div>
@@ -142,12 +158,12 @@
                             <div class="panel task db mbm">
                                 <div class="panel-body">
                                     <p class="icon">
-                                        <i class="icon fa fa-signal"></i>
+                                        <i class="icon fa fa-building"></i>
                                     </p>
                                     <h4 class="value">
-                                        <span>215</span></h4>
+                                        <span>21</span></h4>
                                     <p class="description">
-                                        Task completed</p>
+                                        Publishers</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;" class="progress-bar progress-bar-danger">
                                             <span class="sr-only">50% Complete (success)</span></div>
@@ -162,9 +178,9 @@
                                         <i class="icon fa fa-group"></i>
                                     </p>
                                     <h4 class="value">
-                                        <span>128</span></h4>
+                                        <span>12</span></h4>
                                     <p class="description">
-                                        Visitor description</p>
+                                        Users</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar progress-bar-warning">
                                             <span class="sr-only">70% Complete (success)</span></div>
@@ -174,77 +190,82 @@
                         </div>
                     </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel">
-                            <div class="panel-body">
-                                <div id="grid-layout-table-1" class="box jplist">
-                    <div class="box text-shadow">
-                        <table class="demo-tbl">
-                            <!--<item>1</item>-->
-                            <tr class="tbl-item">
-                                <!--<img/>-->
-                                <td class="img"><img src="images/books/book1.jpg" alt="" title="" /></td>
-                                <!--<data></data>-->
-                                <td class="td-block">
-                                    <p class="date">03/15/2012</p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div id="grid-layout-table-1" class="box jplist">
+                                        <div class="box text-shadow">
+                                            <table class="demo-tbl">
+                                                <!--<item>1</item>-->
+                                                <tr class="tbl-item">
+                                                    <!--<img/>-->
+                                                    <td class="img"><img src="images/books/book1.jpg" alt="" title="" /></td>
+                                                    <!--<data></data>-->
+                                                    <td class="td-block">
+                                                        <p class="date">03/15/2012</p>
 
-                                    <p class="title">Arch</p>
+                                                        <p class="title">Book 1</p>
 
-                                    <p class="desc">An arch is a structure that spans a space and supports a load. Arches appeared as early
-                                        as the 2nd millennium BC in Mesopotamian brick architecture and their systematic
-                                        use started with the Ancient Romans who were the first to apply the technique to
-                                        a wide range of structures.</p>
+                                                        <p class="desc">Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text</p>
 
-                                    <p class="like">5 Likes</p>
-                                </td>
-                            </tr>
-                            <!--<item>2</item>-->
-                            <tr class="tbl-item">
-                                <!--<img/>-->
-                                <td class="img"><img src="images/books/book2.jpg" alt="" title="" /></td>
-                                <!--<data></data>-->
-                                <td class="td-block">
-                                    <p class="date">03/18/2012</p>
+                                                        <p class="like">5 Likes</p>
+                                                    </td>
+                                                </tr>
+                                                <!--<item>2</item>-->
+                                                <tr class="tbl-item">
+                                                    <!--<img/>-->
+                                                    <td class="img"><img src="images/books/book2.jpg" alt="" title="" /></td>
+                                                    <!--<data></data>-->
+                                                    <td class="td-block">
+                                                        <p class="date">03/18/2011</p>
 
-                                    <p class="title">Architecture</p>
+                                                        <p class="title">Book 2</p>
 
-                                    <p class="desc">Architecture is both the process and product of planning, designing and construction.
-                                        Architectural works, in the material form of buildings, are often perceived as cultural
-                                        symbols and as works of art. Historical civilizations are often identified with their
-                                        surviving architectural achievements.</p>
+                                                        <p class="desc">Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text 
+                                                            Sample text Sample text Sample text Sample text Sample text Sample text</p>
 
-                                    <p class="like">25 Likes</p>
-                                </td>
-                            </tr>
-                            <!--<item>3</item>-->
-                            <tr class="tbl-item">
-                                <!--<img/>-->
-                                <td class="img"><img src="images/books/book3.jpg" alt="" title="" /></td>
-                                <!--<data></data>-->
-                                <td class="td-block">
-                                    <p class="date">02/24/2000</p>
+                                                        <p class="like">25 Likes</p>
+                                                    </td>
+                                                </tr>
+                                                <!--<item>3</item>-->
+                                                <tr class="tbl-item">
+                                                    <!--<img/>-->
+                                                    <td class="img"><img src="images/books/book3.jpg" alt="" title="" /></td>
+                                                    <!--<data></data>-->
+                                                    <td class="td-block">
+                                                        <p class="date">02/24/2000</p>
 
-                                    <p class="title">Boats</p>
+                                                        <p class="title">Book 3</p>
 
-                                    <p class="desc">A boat is a watercraft of any size designed to float or plane, to provide passage across
-                                        water. Usually this water will be inland (lakes) or in protected coastal areas. However,
-                                        boats such as the whaleboat were designed to be operated from a ship in an offshore
-                                        environment. In naval terms, a boat is a vessel small enough to be carried aboard
-                                        another vessel (a ship).</p>
+                                                        <p class="desc">A boat is a watercraft of any size designed to float or plane, to
+                                                            provide passage across water. Usually this water will be inland
+                                                            (lakes) or in protected coastal areas. However, boats such as
+                                                            the whaleboat were designed to be operated from a ship in an
+                                                            offshore environment. In naval terms, a boat is a vessel small
+                                                            enough to be carried aboard another vessel (a ship).</p>
 
-                                    <p class="like">11 Likes</p>
-                                </td>
-                            </tr>
+                                                        <p class="like">11 Likes</p>
+                                                    </td>
+                                                </tr>
 
-                        </table>
-                    </div>
+                                            </table>
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
                 </div>
                 <!--END CONTENT-->
@@ -263,7 +284,7 @@
     <script src="script/jquery-ui.js "></script>
     <script src="script/bootstrap.min.js "></script>
     <script src="script/bootstrap-hover-dropdown.js "></script>
-   
+
     <script src="script/jquery.metisMenu.js "></script>
 
     <script src="script/jquery.cookie.js "></script>
@@ -274,4 +295,5 @@
     <script src="script/main.js "></script>
 
 </body>
+
 </html>
