@@ -147,7 +147,8 @@ hr {
 #topbar .navbar-header {
   width: 250px;
   height: 100%;
-  background: #1E1E1E;
+  background: #007451;
+  /*background: #1E1E1E;*/
   text-align: center;
 }
 
@@ -170,7 +171,8 @@ hr {
 #topbar .topbar-main {
   display: block;
   height: 100%;
-  background: #1E1E1E;
+  background: #007451;
+  /*background: #1E1E1E;*/
 }
 #topbar .topbar-main #menu-toggle {
   float: left;
