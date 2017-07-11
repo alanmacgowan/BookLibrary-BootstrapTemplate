@@ -151,7 +151,22 @@ hr {
   /*background: #1E1E1E;*/
   text-align: center;
 }
-
+#topbar .navbar-login {
+  width: 100%;
+  height: 100%;
+  background: #007451;
+  /*background: #1E1E1E;*/
+  text-align: left;
+}
+#topbar .navbar-login #logo {
+  line-height: 20px;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
 #topbar .navbar-header #logo {
   font-size: 20px;
   line-height: 20px;
