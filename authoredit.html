@@ -29,7 +29,7 @@
             <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
                 <div class="navbar-header">
                     <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text">BookLibrary</span><span style="display: none" class="logo-text-icon">µ</span></a></div>
+                    <a id="logo" href="dashboard.html" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text">BookLibrary</span><span style="display: none" class="logo-text-icon">µ</span></a></div>
                 <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
 
                     <form id="topbar-search" action="" method="" class="hidden-sm hidden-xs">
@@ -117,112 +117,84 @@
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
-                                                                    <div class="text-center mbl"><img src="./images/books/book1.jpg" alt="" /></div>
+                                                                    <div class="text-center mbl"><img src="./images/avatar/avatar_2x.png" alt="" /></div>
                                                                     <div class="text-center mbl"><a href="#" class="btn btn-green"><i class="fa fa-upload"></i>&nbsp; Upload Image</a></div>
                                                                 </div>
                                                                 <hr/>
                                                             </div>
                                                             <div class="col-md-8">
-                                                                <div class="form-group">
-                                                                    <label for="inputSubject" class="control-label">
-                                                            Title</label>
-                                                                    <div class="input-icon right">
-                                                                        <input id="inputSubject" type="text" placeholder="" class="form-control" /></div>
-                                                                </div>
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <div class="form-group">
-                                                                            <label for="inputName" class="control-label">
-                                                                    ISBN</label>
+                                                                            <label for="FirstName" class="control-label">
+                                                                    First Name</label>
                                                                             <div class="input-icon right">
-                                                                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                                                                <input id="FirstName" type="text" placeholder="" class="form-control" /></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="form-group">
-                                                                            <label for="inputEmail" class="control-label">
-                                                                    Authors</label>
+                                                                            <label for="LastName" class="control-label">
+                                                                    Last Name</label>
                                                                             <div class="input-icon right">
-                                                                                <input id="inputEmail" type="text" placeholder="" class="form-control" /></div>
+                                                                                <input id="LastName" type="text" placeholder="" class="form-control" /></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-md-4">
                                                                         <div class="form-group">
-                                                                            <label for="inputSubject" class="control-label">
-                                                            Language</label>
+                                                                            <label for="Country" class="control-label">
+                                                            Country</label>
                                                                             <select class="form-control">
-                                                                    <option>English</option>
-                                                                    <option>Spanish</option>
-                                                                    <option>Russian</option>
+                                                                    <option>Argentina</option>
+                                                                    <option>USA</option>
+                                                                    <option>Italia</option>
                                                                 </select></div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label for="BirthDate" class="control-label">
+                                                            Birth Date</label>
+                                                                            <input id="BirthDate" type="text" placeholder="" class="form-control" /></div>
                                                                     </div>
                                                                     <div class="col-md-4">
                                                                         <div class="form-group">
-                                                                            <label for="inputSubject" class="control-label">
-                                                            Publisher</label>
-                                                                            <select class="form-control">
-                                                                    <option>Publisher 1</option>
-                                                                    <option>Publisher 2</option>
-                                                                    <option>Publisher 3</option>
-                                                                </select></div>
+                                                                            <label for="Gender" class="control-label">
+                                                            Gender</label>
+                                                                            <div class="radio">
+                                                                                <label class="radio-inline">
+                                                                <input id="optionsMale" type="radio" name="optionsRadios" value="Male" checked="checked" />&nbsp;
+                                                                Male</label>
+                                                                                <label class="radio-inline"><input id="optionsFemale" type="radio" name="optionsRadios"
+                                                                        value="Female" />&nbsp; Female</label>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                         <div class="col-md-4">
-                                                                        <div class="form-group">
-                                                                            <label for="inputSubject" class="control-label">
-                                                            Category</label>
-                                                                            <select class="form-control">
-                                                                    <option>History</option>
-                                                                    <option>Comedy</option>
-                                                                    <option>Science Fiction</option>
-                                                                </select></div>
-                                                                    </div>
+
+
                                                                 </div>
                                                                 <div class="row">
-                                                                    <div class="col-md-4">
+                                                                    <div class="col-md-12">
                                                                         <div class="form-group">
-                                                                            <label for="inputSubject" class="control-label">
-                                                            Price</label>
-                                                                            <input id="inputPostCode" type="text" placeholder="" class="form-control" /></div>
-                                                                    </div>
-                                                                    <div class="col-md-4">
-                                                                        <div class="form-group">
-                                                                            <label for="inputSubject" class="control-label">
-                                                            Pages</label>
-                                                                            <input id="inputPostCode" type="text" placeholder="" class="form-control" /></div>
-                                                                    </div>
-                                                                    <div class="col-md-4">
-                                                                        <div class="form-group">
-                                                                            <label for="inputSubject" class="control-label">
-                                                            Publish Date</label>
-                                                                            <input id="inputPostCode" type="text" placeholder="" class="form-control" /></div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group">
-                                                            <div class="radio">
-                                                                <label class="radio-inline">
-                                                                <input id="optionsVisa" type="radio" name="optionsRadios" value="Visa" checked="checked" />&nbsp;
-                                                                Hardcover</label>
-                                                                <label class="radio-inline"><input id="optionsMasterCard" type="radio" name="optionsRadios"
-                                                                        value="MasterCard" />&nbsp; Softcover</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="inputMessage" class="control-label">
-                                                            Description</label>
-                                                            <textarea rows="5" class="form-control"></textarea>
-                                                        </div>
-                                                        <div class="form-group mbn">
-                                                            <div class="checkbox">
-                                                                <label>
+                                                                            <label for="About" class="control-label">
+                                                            About</label>
+                                                                            <textarea id="About" rows="5" class="form-control"></textarea>
+                                                                        </div>
+                                                                        <div class="form-group mbn">
+                                                                            <div class="checkbox">
+                                                                                <label>
                                                                 <input tabindex="5" type="checkbox" />&nbsp; Active</label></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
+
+
+
+
                                                     </div>
                                                     <div class="form-actions text-right pal">
                                                         <button type="submit" class="btn btn-green">Save</button>
