@@ -20,5 +20,8 @@
   "homepage": "https://github.com/alanmacgowan/BookLibrary-BootstrapTemplate#readme",
   "devDependencies": {
     "webpack": "^3.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }
