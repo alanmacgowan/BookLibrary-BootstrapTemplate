@@ -19,9 +19,16 @@
   },
   "homepage": "https://github.com/alanmacgowan/BookLibrary-BootstrapTemplate#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.2.0"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1"
   }
 }

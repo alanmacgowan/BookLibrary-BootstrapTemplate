@@ -6277,7 +6277,7 @@ li [class*=" icon-"].icon-large {
 }
 .wait {
   position: relative;
-  background: url("../../images/icons/loading.gif") center no-repeat !important;
+  /*background: url("../../images/icons/loading.gif") center no-repeat !important;*/
 }
 .family-tree-vertical li {
   margin: 0px 0;
