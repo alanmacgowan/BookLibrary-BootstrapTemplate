@@ -12,11 +12,6 @@ module.exports = {
         'vendor': './scripts/vendor.js',
         'app': './scripts/main.js'
     }
-    // entry: './scripts/vendor.js'
-    // , output: {
-    //     filename: 'scripts.js',
-    //     path: helpers.root('dist')
-    // }
     , module: {
         rules: [{
             test: /\.css$/,
