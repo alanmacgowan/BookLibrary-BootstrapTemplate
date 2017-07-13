@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
     entry: './script/vendor.js',
@@ -40,9 +41,11 @@ module.exports = {
             jQuery: "jquery"
         })
         , new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
+            compress: { warnings: false }
+        }),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/,
+            cssProcessorOptions: { discardComments: { removeAll: true } }
         })
     ]
 };
