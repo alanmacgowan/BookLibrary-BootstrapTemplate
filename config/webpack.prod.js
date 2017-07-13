@@ -8,14 +8,12 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = webpackMerge(commonConfig, {
-
-  // output: {
-  //   path: helpers.root('dist'),
-  //   publicPath: '/',
-  //   filename: '[name].js',
-  //   chunkFilename: '[id].chunk.js'
-  // },
-
+  output: {
+    path: helpers.root('dist'),
+    publicPath: './',
+    filename: '[name].[hash].js',
+    chunkFilename: '[id].[hash].chunk.js'
+  },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false }
@@ -24,6 +22,7 @@ module.exports = webpackMerge(commonConfig, {
       assetNameRegExp: /\.css$/,
       cssProcessorOptions: { discardComments: { removeAll: true } }
     }),
+    new ExtractTextPlugin('[name].[hash].css'),
     new webpack.DefinePlugin({
       'process.env': {
         'ENV': JSON.stringify(ENV)
