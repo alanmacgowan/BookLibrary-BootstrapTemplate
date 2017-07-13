@@ -16,18 +16,14 @@ module.exports = webpackMerge(commonConfig, {
   //   chunkFilename: '[id].chunk.js'
   // },
 
-//   htmlLoader: {
-//     minimize: false
-//   },
-
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({ 
+    new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false }
     }),
-        new OptimizeCssAssetsPlugin({
-            assetNameRegExp: /\.css$/,
-            cssProcessorOptions: { discardComments: { removeAll: true } }
-        }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/,
+      cssProcessorOptions: { discardComments: { removeAll: true } }
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'ENV': JSON.stringify(ENV)

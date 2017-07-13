@@ -87,4 +87,4 @@
         // apply dropdownHover to all elements with the data-hover="dropdown" attribute
         $('[data-hover="dropdown"]').dropdownHover();
     });
-})(jQuery, this);
+})(jQuery, window);

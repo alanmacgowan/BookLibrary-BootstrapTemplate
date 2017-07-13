@@ -9,10 +9,5 @@ module.exports = webpackMerge(commonConfig, {
   //   publicPath: 'http://localhost:8080/',
   //   filename: '[name].js',
   //   chunkFilename: '[id].chunk.js'
-  // },
-
-//   plugins: [
-//     new ExtractTextPlugin('[name].css')
-//   ]
-
+  // }
 });
