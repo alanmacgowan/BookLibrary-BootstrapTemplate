@@ -1,9 +1,8 @@
 $(function () {
     
-
-
     //BEGIN MENU SIDEBAR
     $('#sidebar').css('min-height', '100%');
+    //END MENU SIDEBAR
 
     $(window).bind("load resize", function () {
         if ($(this).width() < 768) {
@@ -27,9 +26,6 @@ $(function () {
     //BEGIN POPOVER
     $("[data-toggle='popover'], [data-hover='popover']").popover();
     //END POPOVER
-
-
-
 
     //BEGIN BACK TO TOP
     $(window).scroll(function(){
