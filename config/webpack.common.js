@@ -77,7 +77,8 @@ module.exports = {
             root: helpers.root('')
         }),
         new webpack.optimize.CommonsChunkPlugin({
-            name: ['app', 'vendor']//, 'polyfills']
+            name: ['app', 'vendor'],//, 'polyfills'],
+            minChunks: Infinity
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
